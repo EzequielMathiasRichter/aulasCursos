@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Cores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div">
+        <h1 id="text">Background-color: <strong id="color">grey</strong> </h1> 
+        <div id="button">
+            <button id="green" ><strong>Green</strong></button>
+            <button id="red" ><strong>Red</strong></button>
+            <button id="blue" ><strong>Blue</strong></button>
+        </div>
+        <button id="resete"><strong>Resete Cores</strong></button>
+    </div>
+
+    <script>
+        let red = window.document.getElementById('red')
+        let blue = window.document.getElementById('blue');
+        let green = window.document.getElementById('green');
+        let color = window.document.getElementById('color');
+        let text = window.document.getElementById('text');
+        let resete = window.document.getElementById('resete')
+        red.addEventListener('click', clicarR);
+        blue.addEventListener('click', clicarB);
+        green.addEventListener('click', clicarG);
+        resete.addEventListener('click', clicarC);
+        function clicarR(){
+            color.innerText = 'red'
+            document.body.style.backgroundColor = 'rgb(250, 86, 86)'
+            text.style.backgroundColor = 'rgb(250, 86, 86)'
+        }
+        function clicarB(){
+            color.innerText = 'blue'
+            document.body.style.backgroundColor = 'rgb(86, 86, 250)'
+            text.style.backgroundColor = 'rgb(86, 86, 250)'
+        }
+        function clicarG(){
+            color.innerText = 'green'
+            document.body.style.backgroundColor = 'rgb(86, 250, 86)'
+            text.style.backgroundColor = 'rgb(86, 250, 86)'
+        }
+        function clicarC(){
+            color.innerText = 'grey'
+            document.body.style.backgroundColor = 'grey'
+            text.style.backgroundColor = 'grey'
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Detecte sua Nacionalidade</h1>
+    Digite o país que você nasceu <input type="text" id="pais">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        let pais = document.getElementById('pais');
+        let res = document.getElementById('res')
+        function calcular(){
+            if(pais == 'Br'){
+                res.innerHTML = `Você é brasileiro`
+            }
+            else{
+                res.innerHTML = `Você é estrangeiro`
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

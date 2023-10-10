@@ -1,0 +1,8 @@
+com\senac\sistemaprodutos\Produto.class
+com\senac\sistemaprodutos\Livro.class
+com\senac\sistemaprodutos\Televisao.class
+com\senac\sistemaprodutos\SistemaProdutos.class
+com\senac\sistemaprodutos\Computador.class
+com\senac\sistemaprodutos\NotaFiscal.class
+com\senac\sistemaprodutos\NomeProdutoInvalidoException.class
+com\senac\sistemaprodutos\ProdutoNaoEncontradoException.class

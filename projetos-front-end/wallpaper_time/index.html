@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Sistema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Autor: Ezequiel Mathias Richter-->
+    <!--E-mail = ezequielrichter57@gmail.com-->
+    <div id="um">
+
+        <h1 id="txt" class="texto">Hora do Dia</h1>
+        <div id="dois">
+            <p class="texto" id="parag">Agora são <span id="hora" type="number">00</span> horas</p>
+            <div id="imagem"><img id="alterarImagem" src="imagens/manha.jpg" alt=""></div>
+            <p id="mensagem" class="texto">Bom Dia</p>
+        </div>
+    </div>
+
+    <script>
+        
+        let alterarImagem = document.getElementById('alterarImagem');
+        
+        
+        let hora = window.document.getElementById('hora');
+        var agora = new Date();
+        var horario = agora.getHours();
+        //horario = 19 alterar hora manualmente para testar site
+        hora.innerHTML = horario;
+        console.log(hora);
+        let mensagem = document.getElementById('mensagem');
+        if(horario>0 && horario<5){
+            mensagem.innerHTML = 'Boa Madrugada!'
+            alterarImagem.setAttribute('src', "imagens/noite.jpg" )
+            document.body.style.backgroundColor = 'rgba(3, 21, 51, 0.824)'
+        }
+        else if(horario>5 && horario<12){
+            mensagem.innerHTML = 'Bom Dia!'
+            alterarImagem.setAttribute('src', "imagens/manha.jpg" )
+            document.body.style.backgroundColor = 'rgb(240, 201, 186)'
+        }
+        else if(horario>12 && horario<18){
+            mensagem.innerHTML = 'Boa Tarde!'
+            alterarImagem.setAttribute("src", "imagens/tarde.jpg" )
+            document.body.style.backgroundColor = 'rgba(163, 79, 27, 0.855)'
+        }
+        else{
+            mensagem.innerHTML = 'Boa Noite!'
+            alterarImagem.setAttribute('src', "imagens/noite.jpg" )
+            document.body.style.backgroundColor = 'rgba(3, 21, 51, 0.824)'
+        }
+        
+
+    </script>
+
+</body>
+</html>

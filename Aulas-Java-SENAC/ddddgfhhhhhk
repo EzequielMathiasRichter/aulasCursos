@@ -1,0 +1,195 @@
+[33mcommit 1ae26f67a27410ff1cae657a574f9aba1d9dc2a0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Sep 12 22:10:10 2023 -0300
+
+    Aula13
+
+[33mcommit 822115bf07fe0bc677d10663675ecf0f96e9209c[m
+Author: Ezequiel Richter <ezequielrichter57@gmail.com>
+Date:   Tue Sep 12 17:14:37 2023 -0300
+
+    Realizando exercícios em casa
+
+[33mcommit eb7c3cb70dcbfaa588e4d634148f33e04511638f[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Sep 5 20:55:48 2023 -0300
+
+    Aula12
+
+[33mcommit b9a12df6275065c5d6aab661d54fe5e690dc2ec1[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Sep 5 20:53:58 2023 -0300
+
+    Atualizando o projeto CadastroPessoa para usar herança e deixar o projeto mais completo
+
+[33mcommit ce59495d823a9ef3ec03c289bdbe8ab8aba8ac7d[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 31 21:40:53 2023 -0300
+
+    Aula11
+
+[33mcommit 33ae6b46cad5e2f39afe983082f85cba1d91db86[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 29 21:40:44 2023 -0300
+
+    Aula10
+
+[33mcommit a9fc1181eb81d357aea142e75fac38fad2fbbefd[m
+Merge: c6c6cbe 6e58ce2
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 29 20:06:57 2023 -0300
+
+    Merge branch 'main' of https://github.com/EzequielMathiasRichter/Aulas_Java
+
+[33mcommit c6c6cbe13dba431f7588f40e2d1dcb9293825653[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 29 20:06:14 2023 -0300
+
+    Aula08
+
+[33mcommit 88a3b14b2924c67695830d37cdf7cd940f61a51e[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 29 19:57:06 2023 -0300
+
+    Modificando o método calcularRendimentoMes com fórmula de juros compostos
+
+[33mcommit 6e58ce286aa532a91db2c1ae66ad5ab8c1c65051[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 29 19:51:59 2023 -0300
+
+    Modificando o método calcularRendimentoMes com fórmula de juros compostos
+
+[33mcommit ad15708d14c4aefce4a2e46cf497e5f7bb97b3a1[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 24 22:12:17 2023 -0300
+
+    Aula08
+
+[33mcommit 2d61ba9740feb4793d8fa67b87792e6c6a1b82fc[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 22 20:29:37 2023 -0300
+
+    Modificando o exercício Empresa
+
+[33mcommit e1a0e985725f937dabda87dfbc2957ab51c75e59[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 22 20:25:19 2023 -0300
+
+    Revert "Modificando o exercício Empresa"
+    
+    This reverts commit 499d850c0991d3872c62c4738afc56e38e013697.
+
+[33mcommit 499d850c0991d3872c62c4738afc56e38e013697[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 22 20:20:29 2023 -0300
+
+    Modificando o exercício Empresa
+
+[33mcommit 3e1754afb5045eb765ab8a062331abb62b3df4aa[m
+Merge: addd193 7abbeed
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 22 19:49:00 2023 -0300
+
+    Merge branch 'main' of https://github.com/EzequielMathiasRichter/Aulas_Java
+
+[33mcommit addd1931499e2ebbc8a8c2120bba4a865a507951[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Tue Aug 22 19:46:01 2023 -0300
+
+    Aula05
+
+[33mcommit 7abbeed4921aa8cf6df1c3172435a6e092eba67d[m
+Author: Ezequiel <ezequielrichter57@gmail.com>
+Date:   Fri Aug 18 15:41:29 2023 -0300
+
+    Update README.md
+
+[33mcommit 096856656a684b6a61524dd5bf5de383f112183b[m
+Author: Ezequiel <ezequielrichter57@gmail.com>
+Date:   Fri Aug 18 15:39:55 2023 -0300
+
+    Update README.md
+
+[33mcommit 246ade636451fdcbf4751fe784fa86a0b9549a0a[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 22:09:40 2023 -0300
+
+    Aula01
+
+[33mcommit 851f65cc535cf8477f7203cf53817c2428a63613[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 22:08:55 2023 -0300
+
+    Aula04
+
+[33mcommit e51d3a3aa9176742613e51195bcca19e97de53f0[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 22:08:05 2023 -0300
+
+    Aula03
+
+[33mcommit f44c5afc5b0f6864f57b8507e12a28434d938801[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 22:02:46 2023 -0300
+
+    Aula01
+
+[33mcommit 27ce8d4ad08105ff72735574435cb4f4ddacd2f6[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 22:02:02 2023 -0300
+
+    Aula02
+
+[33mcommit f0ad9157235abf37aa94dc6ed3432d6335040448[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 21:57:36 2023 -0300
+
+    Removendo pasta duplicada
+
+[33mcommit e251d614863d3cc7bbc4c053cfb52d312b99b0c1[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 21:51:18 2023 -0300
+
+    Renomeando pasta Empresa2 -> Empresa
+
+[33mcommit 54ab62e93164101c0ebdbe5d3f319a13053c587e[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 21:48:30 2023 -0300
+
+    Remove pasta Empresa
+
+[33mcommit b0f32c1f5648d6f56426ba6ca900b2926da19c7c[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 21:45:20 2023 -0300
+
+    Aula05
+
+[33mcommit 304d0b4605e834bbba9f34b6dc8dc700730e672d[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 20:41:38 2023 -0300
+
+    Aula05
+
+[33mcommit 0fc3cdf99657eba3da716dad7740e7aa7213ec3d[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 17 20:20:46 2023 -0300
+
+    Aula05
+
+[33mcommit 8ac1e128fe42d7908a781b3c31dc208fda4f5ee9[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 10 22:20:06 2023 -0300
+
+    Adicionando o exercício (Empresa)
+
+[33mcommit d04f55ebe69b8830eb86db344469af59e99d69d4[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 10 19:47:30 2023 -0300
+
+    Descrição do repositório
+
+[33mcommit 2a914ce284f2a02e9e549212303db38e5e9860e5[m
+Author: Ezequiel M. Richter <ezequielrichter57@gmail.com>
+Date:   Thu Aug 10 19:41:55 2023 -0300
+
+    Aula 05, first commit
