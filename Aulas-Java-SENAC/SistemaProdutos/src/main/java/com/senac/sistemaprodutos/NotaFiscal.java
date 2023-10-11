@@ -19,11 +19,11 @@ public class NotaFiscal {
     private List<Produto> produtos = new ArrayList();
 
     public void adicionarProduto(Produto produto) {
-        if(produto.getNome().length() < 20 ){
-            produtos.add(produto);            
-        }else{
-            throw new ProdutoNaoEncontradoException(String.format("O produto %s não foi adicionado pois o nome não pode ter mais que %d caracteres.",produto.getNome(), 20));
-        }    
+        if (produto.getNome().length() < 20) {
+            produtos.add(produto);
+        } else {
+            throw new ProdutoNaoEncontradoException(String.format("O produto %s não foi adicionado pois o nome não pode ter mais que %d caracteres.", produto.getNome(), 20));
+        }
     }
 
     public double calcularValorTotal() {
@@ -44,32 +44,29 @@ public class NotaFiscal {
     }
 
     public void removerProdutoPorNome(String nome) {
-        for (int i = 0; i < produtos.size(); i++) {
-            Produto p = produtos.get(i);
-            if (p.getNome().equals(nome)) {
-                produtos.remove(p);
-                
-            }else{
-                throw new ProdutoNaoEncontradoException(String.format("O produto %s não foi removido pois não foi encontrado.",p ));
-            }
+//        for (int i = 0; i < produtos.size(); i++) {
+//            Produto p = produtos.get(i);
+//            if (p.getNome().equals(nome)) {
+//                produtos.remove(p);
+//            }
+//        }
+        if (this.produtos.removeIf(prod -> prod.getNome().equals(nome)) == false) {
+            throw new ProdutoNaoEncontradoException(String.format("O produto %s não pode ser removido pois não foi encontrado.", nome));
         }
     }
 
     public Produto getProdutoPorNome(String nome) {
 //         usando for
-        for (int i = 0; i < produtos.size(); i++) {
-            Produto p = produtos.get(i);
-            if (p.getNome().equals(nome)) {
-                return p;
-            }else{
-                throw new ProdutoNaoEncontradoException(String.format("O produto: %s não foi encontrado", p));
-            }           
-        }
-//        return null;
+//        for (int i = 0; i < produtos.size(); i++) {
+//            Produto p = produtos.get(i);
+//            if (p.getNome().equals(nome)) {
+//                return p;
+//            }        
+//        }
         // usando métodos prontos
-//        return this.produtos.stream().filter(prod -> prod.getNome().equals(nome)).findAny().orElse(null);
-        return null;
-        
+        return this.produtos.stream().filter(prod -> prod.getNome().equals(nome)).findAny().orElseThrow(() -> new ProdutoNaoEncontradoException(String.format("O produto %s não foi encontrado.", nome)));
+
+//        return null;
     }
 
     public boolean poussuiProdutoPorNome(String nome) {
