@@ -27,4 +27,15 @@ public class CalculadoraTest {
         double subtracao = Calculadora.subtrair(2,1);
         Assertions.assertEquals(1, subtracao);
     }
+    @Test
+    public void quandoMultiplicar_DeveTerSucesso(){
+        //Arange
+        double valor1 = 10;
+        double valor2 = 20;
+        double valorEsperado = 200;
+        //act
+        double multiplicacao = Calculadora.multiplicar(valor1, valor2);
+        //assert
+        Assertions.assertEquals(valorEsperado, multiplicacao);
+    }
 }

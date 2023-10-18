@@ -16,5 +16,10 @@ public class Calculadora {
     public static double subtrair(double valor1, double valor2){
         double subtracao = valor1 - valor2;
         return subtracao;
+        
+    }
+    public static double multiplicar(double valor1,double valor2){
+        double multiplicacao = valor1 * valor2;
+        return multiplicacao;
     }
 }
