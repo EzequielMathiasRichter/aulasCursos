@@ -22,4 +22,8 @@ public class Calculadora {
         double multiplicacao = valor1 * valor2;
         return multiplicacao;
     }
+    public static double dividir(double valor1, double valor2){
+        double divisao = valor1 / valor2;
+        return divisao;
+    }
 }

@@ -88,4 +88,7 @@ public class NotaFiscal {
         Collections.sort(produtos, comparator);
         return produtos;
     }
+    public List<Produto> getProdutos(){
+        return this.produtos;
+    }
 }

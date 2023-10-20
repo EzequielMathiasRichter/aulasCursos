@@ -18,14 +18,23 @@ public class CalculadoraTest {
     
     @Test
     public void quandoSomar_DeveTerSucesso() {
-        double soma = Calculadora.somar(1, 2);
+        double valor1 = 1;
+        double valor2 = 2;
+        double valorEsperado = 3;
         
-        Assertions.assertEquals(3, soma);
+        double soma = Calculadora.somar(valor1, valor2);
+        
+        Assertions.assertEquals(valorEsperado, soma);
     }
     @Test
     public void quandoSubtrair_DeveTerSucesso(){
-        double subtracao = Calculadora.subtrair(2,1);
-        Assertions.assertEquals(1, subtracao);
+        double valor1 = 1;
+        double valor2 = 2;
+        double valorEsperado = -1;
+        
+        double subtracao = Calculadora.subtrair(valor1,valor2);
+        
+        Assertions.assertEquals(valorEsperado, subtracao);
     }
     @Test
     public void quandoMultiplicar_DeveTerSucesso(){
@@ -37,5 +46,15 @@ public class CalculadoraTest {
         double multiplicacao = Calculadora.multiplicar(valor1, valor2);
         //assert
         Assertions.assertEquals(valorEsperado, multiplicacao);
+    }
+    @Test
+    public void quandoDividir_DeveTerSucesso(){
+        double valor1 = 10;
+        double valor2 = 2;
+        double valorEsperado = 5;
+        
+        double divisao = Calculadora.dividir(valor1, valor2);
+        
+        Assertions.assertEquals(valorEsperado, divisao);
     }
 }
