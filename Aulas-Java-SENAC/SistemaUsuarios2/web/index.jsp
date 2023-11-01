@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
-<%@page import="com.mysql.jdbc.Driver"%>
+
 
 <!DOCTYPE html>
 <html>
