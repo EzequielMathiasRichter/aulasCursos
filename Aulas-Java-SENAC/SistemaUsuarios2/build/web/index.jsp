@@ -1,12 +1,12 @@
 <%-- 
     Document   : index
     Created on : 24 de out. de 2023, 20:05:49
-    Author     : guilherme.walter
+    Author     : EzequielRichter
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
-
+<%@page import="config.SistemasUsuariosDb"%>
 
 <!DOCTYPE html>
 <html>
@@ -15,6 +15,9 @@
         <title>Login</title>
         <link rel="stylesheet" href="assets/style.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="icon" type="image/png" sizes="16x16"  href="assets/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
 
@@ -24,7 +27,7 @@
                     <div class="card border-0 rounded-3 shadow-lg">
                         <div class="card-body p-4">
                             <div class="text-center">
-                                <div class="h1 fw-light">Cadastro</div>
+                                <div class="h1 fw-light">Entrar</div>
                             </div>
 
                             <form method="post">
@@ -38,7 +41,7 @@
                                 <!-- Email Input -->
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="senha"name="senha" type="password" placeholder="Senha"/>
-                                    <label forsenha">Senha</label>
+                                    <label for="senha">Senha</label>
                                 </div>
 
                                 <!-- Submit button -->
