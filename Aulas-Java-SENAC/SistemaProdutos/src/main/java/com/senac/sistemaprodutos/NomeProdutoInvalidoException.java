@@ -6,7 +6,7 @@ package com.senac.sistemaprodutos;
 
 /**
  *
- * @author Aluno
+ * @author EzequielRichter
  */
 public class NomeProdutoInvalidoException {
     

@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author Aluno
+ * @author EzequielRichter
  */
 public class NotaFiscal {
 

@@ -1,36 +1,86 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
-
-import com.senac.sistemaprodutos.Livro;
 import com.senac.sistemaprodutos.NotaFiscal;
 import com.senac.sistemaprodutos.Produto;
-import java.util.ArrayList;
-import java.util.List;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author Aluno
- */
 public class NotaFiscalTest {
-    @Test
-    public void quandoAdicionarProdutoValido_DeveTerSucesso(){
-        NotaFiscal notaFiscal = new NotaFiscal();
-        Livro useACabecaJava = new Livro("Use a cabeça Java", 65, 5);
-        
-        notaFiscal.adicionarProduto(useACabecaJava);
-        
-        Assertions.assertEquals(1, notaFiscal.getProdutos().size());
-        Assertions.assertEquals("Use a cabeça Java", notaFiscal.getProdutos().get(0).getNome());
-    } 
-    
 
+    @Test
+    void calcularValorTotalDeveRetornarZeroParaListaVazia() {
+        NotaFiscal notaFiscal = new NotaFiscal();
+        assertEquals(0.0, notaFiscal.calcularValorTotal());
+    }
+
+    @Test
+    void adicionarProdutoDeveAumentarValorTotal() {
+        NotaFiscal notaFiscal = new NotaFiscal();
+        Produto produto1 = new Produto("Produto1", 30.0, 15.0);
+        Produto produto2 = new Produto("Produto2", 8.0, 4.0); 
+
+        notaFiscal.adicionarProduto(produto1);
+        notaFiscal.adicionarProduto(produto2);
+
+        assertEquals(57.0, notaFiscal.calcularValorTotal());
+    }
+
+    @Test
+    void removerProdutoPorNomeDeveRemoverProduto() {
+        NotaFiscal notaFiscal = new NotaFiscal();
+        Produto produto = new Produto("Produto1", 30.0, 15.0); // 
+        notaFiscal.adicionarProduto(produto);
+
+        notaFiscal.removerProdutoPorNome("Produto1");
+
+        assertFalse(notaFiscal.poussuiProdutoPorNome("Produto1"));
+    }
+
+    @Test
+    void getProdutoPorNomeDeveRetornarProdutoCorreto() {
+        NotaFiscal notaFiscal = new NotaFiscal();
+        Produto produto1 = new Produto("Produto1", 30.0, 15.0); 
+        Produto produto2 = new Produto("Produto2", 8.0, 4.0);  
+
+        notaFiscal.adicionarProduto(produto1);
+        notaFiscal.adicionarProduto(produto2);
+
+        assertEquals(produto1, notaFiscal.getProdutoPorNome("Produto1"));
+    }
+
+    @Test
+    void possuiProdutoPorNomeDeveRetornarTrueSeProdutoExistir() {
+        NotaFiscal notaFiscal = new NotaFiscal();
+        Produto produto = new Produto("Produto1", 30.0, 15.0);
+        notaFiscal.adicionarProduto(produto);
+
+        assertTrue(notaFiscal.poussuiProdutoPorNome("Produto1"));
+    }
+
+    @Test
+    void getProdutosOrdenadosPorNomeDeveRetornarListaOrdenada() {
+        NotaFiscal notaFiscal = new NotaFiscal();
+        Produto produto2 = new Produto("Produto2", 8.0, 4.0);
+        Produto produto1 = new Produto("Produto1", 30.0, 15.0);
+
+        notaFiscal.adicionarProduto(produto2);
+        notaFiscal.adicionarProduto(produto1);
+
+        assertEquals(produto1, notaFiscal.getProdutosOrdenadosPorNome().get(0));
+        assertEquals(produto2, notaFiscal.getProdutosOrdenadosPorNome().get(1));
+    }
+
+    @Test
+    void getProdutosOrdenadosPorPrecoDeveRetornarListaOrdenada() {
+        NotaFiscal notaFiscal = new NotaFiscal();
+        Produto produto2 = new Produto("Produto2", 8.0, 4.0); 
+        Produto produto1 = new Produto("Produto1", 30.0, 15.0); 
+
+        notaFiscal.adicionarProduto(produto2);
+        notaFiscal.adicionarProduto(produto1);
+
+        assertEquals(produto2, notaFiscal.getProdutosOrdenadosPorPreco().get(0));
+        assertEquals(produto1, notaFiscal.getProdutosOrdenadosPorPreco().get(1));
+    }
 }
+
+
+

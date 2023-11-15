@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  *
- * @author aluno
+ * @author EzequielRichter
  */
 public class SistemaProdutos {
 
