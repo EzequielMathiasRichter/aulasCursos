@@ -45,4 +45,25 @@ public class UsuarioService {
         }
         return usuarios;
     }
+
+    public Usuario detalharUsuario(Integer idUsuario) {
+        Usuario usuario = null;
+        try {
+            Connection connection = SistemasUsuariosDb.getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM usuario WHERE id = '" + idUsuario + "'");
+            while (resultSet.next()){
+                usuario = new Usuario(); 
+                usuario.setId(Integer.parseInt(resultSet.getString("id")));
+                usuario.setNome(resultSet.getString("nome"));
+                usuario.setEmail(resultSet.getString("email"));
+                usuario.setNivel(resultSet.getString("nivel"));
+                usuario.setSenha(resultSet.getString("senha"));
+            }
+        } catch (Exception ex) {
+            System.out.println("Erro ao detalhar usuario");
+            ex.printStackTrace();
+        }
+        return usuario;
+    }
 }

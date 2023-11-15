@@ -10,7 +10,7 @@ package model;
  */
 public class Usuario {
 
-
+    private String senha;
     private Integer id;
     private String nome;
     private String email;
@@ -24,6 +24,14 @@ public class Usuario {
         this.nome = nome;
         this.email = email;
         this.nivel = nivel;
+    }
+    
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public Integer getId() {
