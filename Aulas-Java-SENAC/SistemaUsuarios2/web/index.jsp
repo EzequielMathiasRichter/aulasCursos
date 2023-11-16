@@ -48,6 +48,42 @@
                                 <div class="d-grid">
                                     <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Entrar</button>
                                 </div>
+                                <h1 align="center">
+                                    <%
+                                        String email = request.getParameter("email");
+                                        String senha = request.getParameter("senha");
+
+                                        if (email != null && senha != null) {
+
+                                            String nomeDriver = "com.mysql.jdbc.Driver";
+                                            Class.forName(nomeDriver);
+
+                                            String localServidor = "localhost";
+                                            String nomeBanco = "sistema_usuarios";
+                                            String url = "jdbc:mysql://" + localServidor + "/" + nomeBanco;
+                                            String user = "root";
+                                            String password = "";
+
+                                            Connection connection = DriverManager.getConnection(url, user, password);
+                                            Statement statement = connection.createStatement();
+                                            ResultSet resultSet = statement.executeQuery("SELECT * FROM usuario WHERE email = '" + email + "' AND senha = '" + senha + "'");
+
+                                            String nomeUsuario = "";
+                                            boolean possuiConta = false;
+                                            while (resultSet.next()) {
+                                                nomeUsuario = resultSet.getString("nome");
+                                                possuiConta = true;
+                                            }
+
+                                            if (possuiConta) {
+                                                session.setAttribute("nomeUsuario", nomeUsuario);
+                                                response.sendRedirect("listar-usuarios.jsp");
+                                            } else {
+                                                out.println("Credenciais incorretas");
+                                            }
+                                        }
+                                    %>
+                                </h1>
                             </form>
                             <!-- End of contact form -->
 
@@ -56,39 +92,5 @@
                 </div>
             </div>
         </div>
-        <%
-            String email = request.getParameter("email");
-            String senha = request.getParameter("senha");
-
-            if (email != null && senha != null) {
-
-                String nomeDriver = "com.mysql.jdbc.Driver";
-                Class.forName(nomeDriver);
-
-                String localServidor = "localhost";
-                String nomeBanco = "sistema_usuarios";
-                String url = "jdbc:mysql://" + localServidor + "/" + nomeBanco;
-                String user = "root";
-                String password = "";
-
-                Connection connection = DriverManager.getConnection(url, user, password);
-                Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery("SELECT * FROM usuario WHERE email = '" + email + "' AND senha = '" + senha + "'");
-
-                String nomeUsuario = "";
-                boolean possuiConta = false;
-                while (resultSet.next()) {
-                    nomeUsuario = resultSet.getString("nome");
-                    possuiConta = true;
-                }
-
-                if (possuiConta) {
-                    session.setAttribute("nomeUsuario", nomeUsuario);
-                    response.sendRedirect("listar-usuarios.jsp");
-                } else {
-                    out.println("Credenciais incorretas");
-                }
-            }
-        %>
     </body>
 </html>

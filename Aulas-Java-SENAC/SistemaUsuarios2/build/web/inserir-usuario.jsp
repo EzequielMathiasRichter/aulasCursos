@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>adicionar usuário</title>
+        <title>Adicionar Usuário</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="icon" type="image/png" sizes="16x16"  href="assets/favicon-16x16.png">
         <meta name="msapplication-TileColor" content="#ffffff">
@@ -74,7 +74,7 @@
 
                                 <!-- Submit button -->
                                 <div class="d-grid">
-                                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Entrar</button>
+                                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Cadastrar</button>
                                 </div>
                             </form>
                             <!-- End of contact form -->
