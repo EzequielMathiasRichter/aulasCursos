@@ -57,7 +57,7 @@
                             </div>
 
                             <form action="editar-usuario-controller.jsp" method="post">
-
+                                <input hidden value="<%out.println(usuario.getId());%>" id="idUsuario" name="idUsuario"/>
                                 <!-- name Input -->
                                 <div class="form-floating mb-3">
                                     <input value="<%out.println(usuario.getNome());%>" class="form-control" id="nome"name="nome" type="text" placeholder="Nome"/>
