@@ -1,3 +1,4 @@
+
 import com.senac.sistemaprodutos.NotaFiscal;
 import com.senac.sistemaprodutos.Produto;
 import org.junit.jupiter.api.Test;
@@ -5,6 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class NotaFiscalTest {
 
+    /**
+     *
+     * @author EzequielRichter
+     */
     @Test
     void calcularValorTotalDeveRetornarZeroParaListaVazia() {
         NotaFiscal notaFiscal = new NotaFiscal();
@@ -15,7 +20,7 @@ public class NotaFiscalTest {
     void adicionarProdutoDeveAumentarValorTotal() {
         NotaFiscal notaFiscal = new NotaFiscal();
         Produto produto1 = new Produto("Produto1", 30.0, 15.0);
-        Produto produto2 = new Produto("Produto2", 8.0, 4.0); 
+        Produto produto2 = new Produto("Produto2", 8.0, 4.0);
 
         notaFiscal.adicionarProduto(produto1);
         notaFiscal.adicionarProduto(produto2);
@@ -37,8 +42,8 @@ public class NotaFiscalTest {
     @Test
     void getProdutoPorNomeDeveRetornarProdutoCorreto() {
         NotaFiscal notaFiscal = new NotaFiscal();
-        Produto produto1 = new Produto("Produto1", 30.0, 15.0); 
-        Produto produto2 = new Produto("Produto2", 8.0, 4.0);  
+        Produto produto1 = new Produto("Produto1", 30.0, 15.0);
+        Produto produto2 = new Produto("Produto2", 8.0, 4.0);
 
         notaFiscal.adicionarProduto(produto1);
         notaFiscal.adicionarProduto(produto2);
@@ -71,8 +76,8 @@ public class NotaFiscalTest {
     @Test
     void getProdutosOrdenadosPorPrecoDeveRetornarListaOrdenada() {
         NotaFiscal notaFiscal = new NotaFiscal();
-        Produto produto2 = new Produto("Produto2", 8.0, 4.0); 
-        Produto produto1 = new Produto("Produto1", 30.0, 15.0); 
+        Produto produto2 = new Produto("Produto2", 8.0, 4.0);
+        Produto produto1 = new Produto("Produto1", 30.0, 15.0);
 
         notaFiscal.adicionarProduto(produto2);
         notaFiscal.adicionarProduto(produto1);
@@ -81,6 +86,3 @@ public class NotaFiscalTest {
         assertEquals(produto1, notaFiscal.getProdutosOrdenadosPorPreco().get(1));
     }
 }
-
-
-
