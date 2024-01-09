@@ -55,16 +55,9 @@
 
                                         if (email != null && senha != null) {
 
-                                            String nomeDriver = "com.mysql.jdbc.Driver";
-                                            Class.forName(nomeDriver);
+                                            
 
-                                            String localServidor = "localhost";
-                                            String nomeBanco = "sistema_usuarios";
-                                            String url = "jdbc:mysql://" + localServidor + "/" + nomeBanco;
-                                            String user = "root";
-                                            String password = "";
-
-                                            Connection connection = DriverManager.getConnection(url, user, password);
+                                            Connection connection = SistemasUsuariosDb.getConnection();
                                             Statement statement = connection.createStatement();
                                             ResultSet resultSet = statement.executeQuery("SELECT * FROM usuario WHERE email = '" + email + "' AND senha = '" + senha + "'");
 

@@ -19,7 +19,6 @@
         + "WHERE id = '" + idUsuario + "'");
         response.sendRedirect("listar-usuarios.jsp");
     } catch (Exception ex) {
-        System.out.println("Erro ao atualizar usuarios.");
         ex.printStackTrace();
     }
 %>

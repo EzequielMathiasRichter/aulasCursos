@@ -7,7 +7,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Usuários</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">        <title>Usuários</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="icon" type="image/png" sizes="16x16"  href="assets/favicon-16x16.png">
         <meta name="msapplication-TileColor" content="#ffffff">
@@ -29,7 +29,7 @@
                             }
                         %>
                     </span>
-                    <a href="logout.jsp">Sair</a>
+                    <a href="logout.jsp"><i class="bi bi-box-arrow-left"></i></a>
                 </div>
             </div>
         </nav>
@@ -75,10 +75,10 @@
                         <td><% out.println(usuario.getEmail()); %></td>
                         <td><% out.println(usuario.getNivel()); %></td>
                         <td class="d-flex">
-                            <a href="editar-usuario.jsp?id=<% out.println(usuario.getId()); %>">Editar</a>
-                            <form action="excluir-usuario-controller.jsp" methos="post">
-                                 <input name="idUsuario" hidden value="<%out.println(usuario.getId());%>"/>
-                                 <button class="btn btn-success btn-sm" type="submit">Excluir</button>
+                            <a href="editar-usuario.jsp?id=<% out.println(usuario.getId()); %>"><i class="bi bi-pencil-square text-primary"></i></a>
+                            <form action="excluir-usuario-controller.jsp" class="ms-2 d-inline-flex" method="post">
+                                <input name="idUsuario" hidden value="<%out.println(usuario.getId());%>"/>
+                                <button class="btn p-0" type="submit"><i class="bi bi-trash text-danger"></i></button>
                             </form>
                         </td>
                     </tr>

@@ -2,20 +2,19 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
-        <group/>
-=======
         <group>
-            <file>file:/C:/Users/Aluno/Desktop/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/index.jsp</file>
-            <file>file:/C:/Users/Aluno/Desktop/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/editar-usuario.jsp</file>
-            <file>file:/C:/Users/Aluno/Desktop/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/inserir-usuario-controller.jsp</file>
-            <file>file:/C:/Users/Aluno/Desktop/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/src/java/service/UsuarioService.java</file>
-            <file>file:/C:/Users/Aluno/Desktop/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/src/java/model/Usuario.java</file>
-            <file>file:/C:/Users/Aluno/Desktop/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/editar-usuario-controller.jsp</file>
-            <file>file:/C:/Users/Aluno/Desktop/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/listar-usuarios.jsp</file>
-            <file>file:/C:/Users/Aluno/Desktop/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/listar-usuarios-controller.jsp</file>
-            <file>file:/C:/Users/Aluno/Desktop/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/inserir-usuario.jsp</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/excluir-usuario-controller.jsp</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/src/java/service/UsuarioService.java</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/editar-usuario-controller.jsp</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/src/java/config/SistemasUsuariosDb.java</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/listar-usuarios.jsp</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/listar-usuarios-controller.jsp</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/src/java/model/Usuario.java</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/editar-usuario.jsp</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/logout.jsp</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/inserir-usuario-controller.jsp</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/index.jsp</file>
+            <file>file:/C:/Users/Ezequiel/Documents/aulasCursos/Aulas-Java-SENAC/SistemaUsuarios2/web/inserir-usuario.jsp</file>
         </group>
->>>>>>> 4890943d6926bbbc8d91a93250ad4a649bb365b0
     </open-files>
 </project-private>

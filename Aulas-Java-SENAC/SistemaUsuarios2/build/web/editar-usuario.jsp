@@ -3,15 +3,15 @@
     Created on : 09/11/2023, 22:02:59
     Author     : Aluno
 --%>
-            <%
-                Integer idUsuario =Integer.parseInt(request.getParameter("id"));
-                UsuarioService usuarioService = new UsuarioService();
-                Usuario usuario = usuarioService.detalharUsuario(idUsuario);
-                if(usuario == null ){
-                    response.sendRedirect("listar-usuarios.jsp");
-                }
+<%
+    Integer idUsuario = Integer.parseInt(request.getParameter("id"));
+    UsuarioService usuarioService = new UsuarioService();
+    Usuario usuario = usuarioService.detalharUsuario(idUsuario);
+    if (usuario == null) {
+        response.sendRedirect("listar-usuarios.jsp");
+    }
 
-            %>
+%>
 <%@page import="service.UsuarioService"%>
 <%@page import="model.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -20,6 +20,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Editar Usuário</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">        <title>Usuários</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="icon" type="image/png" sizes="16x16"  href="assets/favicon-16x16.png">
         <meta name="msapplication-TileColor" content="#ffffff">
@@ -33,8 +34,7 @@
 
                 <div>
                     <span>
-                        <%
-                            String nomeUsuario = (String) session.getAttribute("nomeUsuario");
+                        <%                            String nomeUsuario = (String) session.getAttribute("nomeUsuario");
                             if (nomeUsuario == null) {
                                 response.sendRedirect("index.jsp");
                             } else {
@@ -42,7 +42,7 @@
                             }
                         %>
                     </span>
-                    <a href="logout.jsp">Sair</a>
+                    <a href="logout.jsp"><i class="bi bi-box-arrow-left"></i></a>
                 </div>
             </div>
         </nav>

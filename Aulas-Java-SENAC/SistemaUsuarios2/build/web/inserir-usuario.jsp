@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Adicionar Usuário</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">        <title>Usuários</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="icon" type="image/png" sizes="16x16"  href="assets/favicon-16x16.png">
         <meta name="msapplication-TileColor" content="#ffffff">
@@ -32,7 +33,7 @@
                             }
                         %>
                     </span>
-                    <a href="logout.jsp">Sair</a>
+                    <a href="logout.jsp"><i class="bi bi-box-arrow-left"></i></a>
                 </div>
             </div>
         </nav>
@@ -53,7 +54,7 @@
                                     <input class="form-control" id="nome"name="nome" type="text" placeholder="Nome"/>
                                     <label for="nome">Nome</label>
                                 </div>
-                                
+
                                 <!-- nível Input -->
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="nivel"name="nivel" type="text" placeholder="Nível"/>

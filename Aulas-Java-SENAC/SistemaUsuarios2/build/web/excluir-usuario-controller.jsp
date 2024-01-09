@@ -10,7 +10,6 @@
         statement.execute("DELETE FROM usuario WHERE id = '" + idUsuario + "'" );
         response.sendRedirect("listar-usuarios.jsp");
     }catch(Exception ex){
-        System.out.println("Erro ao exluir usuário");
         ex.printStackTrace();
     }
 %>
