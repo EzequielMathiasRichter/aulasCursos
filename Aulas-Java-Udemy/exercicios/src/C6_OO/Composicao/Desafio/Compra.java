@@ -6,6 +6,7 @@ public class Compra {
     final ArrayList<Item> itens = new ArrayList<>();
 
     void adicionarItem(Produto p, int quantidade){
+
         this.itens.add(new Item(p, quantidade));
     }
     void adicionarItem(String nome, double preco, int quantidade){

@@ -18,5 +18,6 @@ public class ClienteTeste {
 
         System.out.println(cliente.obterValorTotal());
 
+
     }
 }
