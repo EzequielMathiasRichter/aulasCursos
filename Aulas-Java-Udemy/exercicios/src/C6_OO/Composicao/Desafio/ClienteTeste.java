@@ -11,7 +11,7 @@ public class ClienteTeste {
 
         Compra compra2 = new Compra();
         compra1.adicionarItem("Caderno", 10, 10);
-        compra1.adicionarItem(new Produto("Impressora",998.90 ), 1);
+        compra1.adicionarItem(new Produto ("Impressora",998.90 ), 1);
 
         cliente.adicionarCompras(compra1);
         cliente.compras.add(compra2);

@@ -2,7 +2,7 @@ package C6_OO.Composicao;
 
 import java.util.ArrayList;
 
-public class Aluno {
+public class Aluno  {
     final String nome;
     final ArrayList<Curso> cursos = new ArrayList<>();
 
