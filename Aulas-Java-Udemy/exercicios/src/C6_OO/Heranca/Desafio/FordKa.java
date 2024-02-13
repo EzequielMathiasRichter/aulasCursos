@@ -48,6 +48,12 @@ public class FordKa extends Carro implements Esportivo, Luxo{
         ligarAr = false;
     }
 
+    @Override
+    public int VelocidadeDaAr() {
+        return Luxo.super.VelocidadeDaAr();
+    }
+
+
     public int getDelta(){
         if(ligarTurbo && !ligarAr){
             return 35;
