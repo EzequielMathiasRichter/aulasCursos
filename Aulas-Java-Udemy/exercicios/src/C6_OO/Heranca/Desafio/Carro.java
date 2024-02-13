@@ -1,18 +1,34 @@
 package C6_OO.Heranca.Desafio;
-
-
 public class Carro {
-    int velocidaAtual;
+    public final int VELOCIDADE_MAXIMA; // constatnte não muda, logo não importa se for public ou protected
+    protected int velocidaAtual;
+    private int delta = 5;
 
-    void acelerar() {
-        velocidaAtual += 5;
+    protected Carro(int velocidadeMaxima) {
+        VELOCIDADE_MAXIMA = velocidadeMaxima;
     }
 
-    void frear() {
-        if (velocidaAtual >= 5) {
-            velocidaAtual -= 5;
+    public void acelerar() {
+        if (velocidaAtual + getDelta() > VELOCIDADE_MAXIMA) {
+            velocidaAtual = VELOCIDADE_MAXIMA;
+        } else{
+        velocidaAtual += getDelta();
+        }
+    }
+
+    public void frear() {
+        if (velocidaAtual >= delta) {
+            velocidaAtual -= delta;
         } else{
             velocidaAtual = 0;
         }
+    }
+
+    public int getDelta() {
+        return delta;
+    }
+
+    public void setDelta(int delta) {
+        this.delta = delta;
     }
 }
